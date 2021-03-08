@@ -19,6 +19,9 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Spacer()
+            FBButton(action: {
+                self.loginViewModel.loginWithFacebook()
+            }).frame(height: 60, alignment: .center)
             AnnonymousButton(action: {
                 self.loginViewModel.loginAnnonymously()
             })
