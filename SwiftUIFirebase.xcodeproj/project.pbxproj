@@ -23,6 +23,7 @@
 		D0FF286025F683C6008571B2 /* ProductSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0FF285E25F683C6008571B2 /* ProductSansRegular.ttf */; };
 		D0FF286525F683E1008571B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF286425F683E1008571B2 /* Constants.swift */; };
 		D0FF287F25F695F1008571B2 /* FBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF287E25F695F1008571B2 /* FBButton.swift */; };
+		D0FF289425F7BE13008571B2 /* String+SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF289325F7BE13008571B2 /* String+SHA256.swift */; };
 		E3A7FE477E1BD46C911C6544 /* Pods_SwiftUIFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3B5D49173337795FB74D5 /* Pods_SwiftUIFirebaseTests.framework */; };
 		E9F3F425690F7020FF1EA984 /* Pods_SwiftUIFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78748840CEE42D16D2CCD3E0 /* Pods_SwiftUIFirebase.framework */; };
 		F0BA448AE06D5181BCF0E550 /* Pods_SwiftUIFirebase_SwiftUIFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B92C8B272A30539B361CD43 /* Pods_SwiftUIFirebase_SwiftUIFirebaseUITests.framework */; };
@@ -75,6 +76,7 @@
 		D0FF285E25F683C6008571B2 /* ProductSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProductSansRegular.ttf; sourceTree = "<group>"; };
 		D0FF286425F683E1008571B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D0FF287E25F695F1008571B2 /* FBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBButton.swift; sourceTree = "<group>"; };
+		D0FF289325F7BE13008571B2 /* String+SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA256.swift"; sourceTree = "<group>"; };
 		E8ECF9052871748151E3208D /* Pods-SwiftUIFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebaseTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebaseTests/Pods-SwiftUIFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE832D9ED87F5D61ACBFEA1A /* Pods-SwiftUIFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebase.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebase/Pods-SwiftUIFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +165,7 @@
 				D0FF284A25F6813F008571B2 /* Views */,
 				D0FF285325F68169008571B2 /* Fragments */,
 				D0FF285C25F683A0008571B2 /* Fonts */,
+				D0FF289225F7BDFD008571B2 /* Extensions */,
 				D021398325F6744F00577DD0 /* Assets.xcassets */,
 				D021398825F6744F00577DD0 /* Info.plist */,
 				D02139AD25F6789300577DD0 /* GoogleService-Info.plist */,
@@ -246,6 +249,14 @@
 				D0FF285E25F683C6008571B2 /* ProductSansRegular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D0FF289225F7BDFD008571B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0FF289325F7BE13008571B2 /* String+SHA256.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +502,7 @@
 				D0FF284C25F68155008571B2 /* LoginView.swift in Sources */,
 				D0FF285525F6818E008571B2 /* AnnonymousButton.swift in Sources */,
 				D0FF282825F67D37008571B2 /* Session.swift in Sources */,
+				D0FF289425F7BE13008571B2 /* String+SHA256.swift in Sources */,
 				D0FF281E25F67942008571B2 /* AppDelegate.swift in Sources */,
 				D021398225F6744E00577DD0 /* ContentView.swift in Sources */,
 				D0FF283125F67E37008571B2 /* LoginViewModel.swift in Sources */,
