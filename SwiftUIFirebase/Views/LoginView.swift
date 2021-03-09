@@ -12,14 +12,35 @@ struct LoginView: View {
     
     @ObservedObject var loginViewModel: LoginViewModel
     @State var loading: Bool = false
+    @State var email: String = ""
+    @State var password: String = ""
     
     init() {
+        UITableView.appearance().backgroundColor = .clear
         loginViewModel = LoginViewModel()
         loginViewModel.checkUser()
     }
     
     var body: some View {
         VStack {
+            Spacer()
+                .frame(height: 64.0)
+            FormTextField(value: $email, placeHolder: "Email")
+                .keyboardType(.emailAddress)
+                .frame(height: 80.0)
+            PasswordFormTextField(value: $password, placeHolder: "Password")
+                .frame(height: 80.0)
+            FormButton(title: "Login", action: {
+                self.loading.toggle()
+                self.loginViewModel.loginWithEmail(self.email, self.password)
+            }).frame(height: 80)
+            HStack {
+                Spacer()
+                Button("Register", action: {
+                    //TODO
+                }).font(.custom(Constants.boldFont, size: 16.0))
+            }.frame(height: 40.0)
+            .padding(.horizontal)
             Spacer()
             if loading {
                 ProgressView()

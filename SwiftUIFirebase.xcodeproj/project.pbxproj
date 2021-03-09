@@ -24,6 +24,9 @@
 		D0FF286525F683E1008571B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF286425F683E1008571B2 /* Constants.swift */; };
 		D0FF287F25F695F1008571B2 /* FBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF287E25F695F1008571B2 /* FBButton.swift */; };
 		D0FF289425F7BE13008571B2 /* String+SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF289325F7BE13008571B2 /* String+SHA256.swift */; };
+		D0FF289C25F7C573008571B2 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF289B25F7C573008571B2 /* FormTextField.swift */; };
+		D0FF28A125F7C997008571B2 /* PasswordFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF28A025F7C997008571B2 /* PasswordFormTextField.swift */; };
+		D0FF28A625F7CA32008571B2 /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF28A525F7CA32008571B2 /* FormButton.swift */; };
 		E3A7FE477E1BD46C911C6544 /* Pods_SwiftUIFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3B5D49173337795FB74D5 /* Pods_SwiftUIFirebaseTests.framework */; };
 		E9F3F425690F7020FF1EA984 /* Pods_SwiftUIFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78748840CEE42D16D2CCD3E0 /* Pods_SwiftUIFirebase.framework */; };
 		F0BA448AE06D5181BCF0E550 /* Pods_SwiftUIFirebase_SwiftUIFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B92C8B272A30539B361CD43 /* Pods_SwiftUIFirebase_SwiftUIFirebaseUITests.framework */; };
@@ -77,6 +80,9 @@
 		D0FF286425F683E1008571B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D0FF287E25F695F1008571B2 /* FBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBButton.swift; sourceTree = "<group>"; };
 		D0FF289325F7BE13008571B2 /* String+SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA256.swift"; sourceTree = "<group>"; };
+		D0FF289B25F7C573008571B2 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		D0FF28A025F7C997008571B2 /* PasswordFormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFormTextField.swift; sourceTree = "<group>"; };
+		D0FF28A525F7CA32008571B2 /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		E8ECF9052871748151E3208D /* Pods-SwiftUIFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebaseTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebaseTests/Pods-SwiftUIFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE832D9ED87F5D61ACBFEA1A /* Pods-SwiftUIFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebase.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebase/Pods-SwiftUIFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +244,9 @@
 			children = (
 				D0FF285425F6818E008571B2 /* AnnonymousButton.swift */,
 				D0FF287E25F695F1008571B2 /* FBButton.swift */,
+				D0FF289B25F7C573008571B2 /* FormTextField.swift */,
+				D0FF28A025F7C997008571B2 /* PasswordFormTextField.swift */,
+				D0FF28A525F7CA32008571B2 /* FormButton.swift */,
 			);
 			path = Fragments;
 			sourceTree = "<group>";
@@ -501,6 +510,8 @@
 			files = (
 				D0FF284C25F68155008571B2 /* LoginView.swift in Sources */,
 				D0FF285525F6818E008571B2 /* AnnonymousButton.swift in Sources */,
+				D0FF28A125F7C997008571B2 /* PasswordFormTextField.swift in Sources */,
+				D0FF28A625F7CA32008571B2 /* FormButton.swift in Sources */,
 				D0FF282825F67D37008571B2 /* Session.swift in Sources */,
 				D0FF289425F7BE13008571B2 /* String+SHA256.swift in Sources */,
 				D0FF281E25F67942008571B2 /* AppDelegate.swift in Sources */,
@@ -509,6 +520,7 @@
 				D0FF287F25F695F1008571B2 /* FBButton.swift in Sources */,
 				D021398025F6744E00577DD0 /* SwiftUIFirebaseApp.swift in Sources */,
 				D0FF286525F683E1008571B2 /* Constants.swift in Sources */,
+				D0FF289C25F7C573008571B2 /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

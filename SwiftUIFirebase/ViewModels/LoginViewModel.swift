@@ -133,6 +133,25 @@ class LoginViewModel: ObservableObject {
         }
     }
     
+    //MARK: - Login With Email Password
+    
+    public func loginWithEmail(_ email: String, _ pass: String) {
+        Auth.auth().signIn(withEmail: email, password: pass) { (result, error) in
+            guard error == nil else {
+                self.error = error
+                self.showingAlert = true
+                return
+            }
+            guard let user = result?.user else {
+                self.error = NSError(domain: "Test", code: 400, userInfo: [NSLocalizedDescriptionKey: "No user found"])
+                self.showingAlert = true
+                return
+            }
+            self.showingAlert = true
+            self.session = Session(user)
+        }
+    }
+    
     //MARK: - Login Annonymously
     
     public func loginAnnonymously() {
