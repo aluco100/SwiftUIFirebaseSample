@@ -33,6 +33,8 @@ struct LoginView: View {
             FormButton(title: "Login", action: {
                 self.loading.toggle()
                 self.loginViewModel.loginWithEmail(self.email, self.password)
+            }, enabled: {
+                return !self.email.isEmpty && !self.password.isEmpty
             }).frame(height: 80)
             HStack {
                 Spacer()
