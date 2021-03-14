@@ -8,6 +8,7 @@ target 'SwiftUIFirebase' do
   # Pods for SwiftUIFirebase
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   pod 'FBSDKCoreKit/Swift'
   pod 'FBSDKLoginKit/Swift'
   pod 'FBSDKShareKit/Swift'

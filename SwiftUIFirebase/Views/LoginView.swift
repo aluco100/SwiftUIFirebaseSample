@@ -14,6 +14,7 @@ struct LoginView: View {
     @State var loading: Bool = false
     @State var email: String = ""
     @State var password: String = ""
+    @State var presentRegister: Bool = false
     
     init() {
         UITableView.appearance().backgroundColor = .clear
@@ -39,8 +40,12 @@ struct LoginView: View {
             HStack {
                 Spacer()
                 Button("Register", action: {
-                    //TODO
-                }).font(.custom(Constants.boldFont, size: 16.0))
+                    self.presentRegister = true
+                })
+                .fullScreenCover(isPresented: self.$presentRegister, content: {
+                    RegistrationView(withPassword: true)
+                })
+                .font(.custom(Constants.boldFont, size: 16.0))
             }.frame(height: 40.0)
             .padding(.horizontal)
             Spacer()

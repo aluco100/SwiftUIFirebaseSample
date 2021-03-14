@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00C882125FA9A8F00121E3A /* String+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C882025FA9A8F00121E3A /* String+Email.swift */; };
+		D00C882625FA9C8F00121E3A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C882525FA9C8F00121E3A /* RegistrationViewModel.swift */; };
+		D00C882D25FA9ED900121E3A /* RegisterStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C882C25FA9ED900121E3A /* RegisterStrategyProtocol.swift */; };
+		D00C883525FA9F8A00121E3A /* RegisterEmailStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C883425FA9F8A00121E3A /* RegisterEmailStrategy.swift */; };
+		D00C883A25FAA14700121E3A /* RegisterThirdPartyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C883925FAA14700121E3A /* RegisterThirdPartyStrategy.swift */; };
+		D00C883F25FAA1C000121E3A /* RegisterStrategyContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C883E25FAA1C000121E3A /* RegisterStrategyContext.swift */; };
+		D00C884425FBAFE200121E3A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C884325FBAFE200121E3A /* RegistrationView.swift */; };
 		D021398025F6744E00577DD0 /* SwiftUIFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D021397F25F6744E00577DD0 /* SwiftUIFirebaseApp.swift */; };
 		D021398225F6744E00577DD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D021398125F6744E00577DD0 /* ContentView.swift */; };
 		D021398425F6744F00577DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D021398325F6744F00577DD0 /* Assets.xcassets */; };
@@ -14,6 +21,7 @@
 		D021399225F6744F00577DD0 /* SwiftUIFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D021399125F6744F00577DD0 /* SwiftUIFirebaseTests.swift */; };
 		D021399D25F6744F00577DD0 /* SwiftUIFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D021399C25F6744F00577DD0 /* SwiftUIFirebaseUITests.swift */; };
 		D02139AE25F6789300577DD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02139AD25F6789300577DD0 /* GoogleService-Info.plist */; };
+		D0E5E02A25F92468003BB6D2 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5E02925F92468003BB6D2 /* Registration.swift */; };
 		D0FF281E25F67942008571B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF281D25F67942008571B2 /* AppDelegate.swift */; };
 		D0FF282825F67D37008571B2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF282725F67D37008571B2 /* Session.swift */; };
 		D0FF283125F67E37008571B2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF283025F67E37008571B2 /* LoginViewModel.swift */; };
@@ -57,6 +65,13 @@
 		A40D596F88D08AAE936EB2B3 /* Pods-SwiftUIFirebase-SwiftUIFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebase-SwiftUIFirebaseUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebase-SwiftUIFirebaseUITests/Pods-SwiftUIFirebase-SwiftUIFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADA3B5D49173337795FB74D5 /* Pods_SwiftUIFirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIFirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7BA35C5270685822E89D79 /* Pods-SwiftUIFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIFirebaseTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIFirebaseTests/Pods-SwiftUIFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		D00C882025FA9A8F00121E3A /* String+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Email.swift"; sourceTree = "<group>"; };
+		D00C882525FA9C8F00121E3A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		D00C882C25FA9ED900121E3A /* RegisterStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStrategyProtocol.swift; sourceTree = "<group>"; };
+		D00C883425FA9F8A00121E3A /* RegisterEmailStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailStrategy.swift; sourceTree = "<group>"; };
+		D00C883925FAA14700121E3A /* RegisterThirdPartyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterThirdPartyStrategy.swift; sourceTree = "<group>"; };
+		D00C883E25FAA1C000121E3A /* RegisterStrategyContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStrategyContext.swift; sourceTree = "<group>"; };
+		D00C884325FBAFE200121E3A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		D021397C25F6744E00577DD0 /* SwiftUIFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021397F25F6744E00577DD0 /* SwiftUIFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirebaseApp.swift; sourceTree = "<group>"; };
 		D021398125F6744E00577DD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +85,7 @@
 		D021399C25F6744F00577DD0 /* SwiftUIFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirebaseUITests.swift; sourceTree = "<group>"; };
 		D021399E25F6744F00577DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02139AD25F6789300577DD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0E5E02925F92468003BB6D2 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		D0FF281D25F67942008571B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0FF282725F67D37008571B2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D0FF283025F67E37008571B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +154,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D00C882A25FA9EB700121E3A /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				D00C882B25FA9EC500121E3A /* Register */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		D00C882B25FA9EC500121E3A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D00C882C25FA9ED900121E3A /* RegisterStrategyProtocol.swift */,
+				D00C883425FA9F8A00121E3A /* RegisterEmailStrategy.swift */,
+				D00C883925FAA14700121E3A /* RegisterThirdPartyStrategy.swift */,
+				D00C883E25FAA1C000121E3A /* RegisterStrategyContext.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		D021397325F6744E00577DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +201,7 @@
 				D0FF281925F67924008571B2 /* App */,
 				D021397F25F6744E00577DD0 /* SwiftUIFirebaseApp.swift */,
 				D021398125F6744E00577DD0 /* ContentView.swift */,
+				D00C882A25FA9EB700121E3A /* Strategies */,
 				D0FF282F25F67E11008571B2 /* ViewModels */,
 				D0FF282625F67D18008571B2 /* Models */,
 				D0FF284A25F6813F008571B2 /* Views */,
@@ -219,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				D0FF282725F67D37008571B2 /* Session.swift */,
+				D0E5E02925F92468003BB6D2 /* Registration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				D0FF283025F67E37008571B2 /* LoginViewModel.swift */,
+				D00C882525FA9C8F00121E3A /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				D0FF284B25F68155008571B2 /* LoginView.swift */,
+				D00C884325FBAFE200121E3A /* RegistrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				D0FF289325F7BE13008571B2 /* String+SHA256.swift */,
+				D00C882025FA9A8F00121E3A /* String+Email.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -510,15 +550,23 @@
 			files = (
 				D0FF284C25F68155008571B2 /* LoginView.swift in Sources */,
 				D0FF285525F6818E008571B2 /* AnnonymousButton.swift in Sources */,
+				D0E5E02A25F92468003BB6D2 /* Registration.swift in Sources */,
+				D00C884425FBAFE200121E3A /* RegistrationView.swift in Sources */,
 				D0FF28A125F7C997008571B2 /* PasswordFormTextField.swift in Sources */,
 				D0FF28A625F7CA32008571B2 /* FormButton.swift in Sources */,
+				D00C883F25FAA1C000121E3A /* RegisterStrategyContext.swift in Sources */,
 				D0FF282825F67D37008571B2 /* Session.swift in Sources */,
 				D0FF289425F7BE13008571B2 /* String+SHA256.swift in Sources */,
 				D0FF281E25F67942008571B2 /* AppDelegate.swift in Sources */,
+				D00C882D25FA9ED900121E3A /* RegisterStrategyProtocol.swift in Sources */,
+				D00C882125FA9A8F00121E3A /* String+Email.swift in Sources */,
 				D021398225F6744E00577DD0 /* ContentView.swift in Sources */,
 				D0FF283125F67E37008571B2 /* LoginViewModel.swift in Sources */,
+				D00C883A25FAA14700121E3A /* RegisterThirdPartyStrategy.swift in Sources */,
 				D0FF287F25F695F1008571B2 /* FBButton.swift in Sources */,
 				D021398025F6744E00577DD0 /* SwiftUIFirebaseApp.swift in Sources */,
+				D00C883525FA9F8A00121E3A /* RegisterEmailStrategy.swift in Sources */,
+				D00C882625FA9C8F00121E3A /* RegistrationViewModel.swift in Sources */,
 				D0FF286525F683E1008571B2 /* Constants.swift in Sources */,
 				D0FF289C25F7C573008571B2 /* FormTextField.swift in Sources */,
 			);
