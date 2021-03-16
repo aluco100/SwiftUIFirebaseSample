@@ -19,8 +19,18 @@ struct RegistrationView: View {
     
     var body: some View {
         NavigationView {
-            
             VStack {
+//                FormTextField(value: self.$registerViewModel.name, placeHolder: "Name")
+//                    .frame(height: 75.0)
+//                FormTextField(value: self.$registerViewModel.email, placeHolder: "Email")
+//                    .frame(height: 75.0)
+//                DatePicker("Birthdate", selection: self.$registerViewModel.birthdate, displayedComponents: .date)
+//                    .frame(height: 50.0)
+//                    .padding()
+//                if self.withPassword {
+//                    PasswordFormTextField(value: self.$registerViewModel.password, placeHolder: "Password")
+//                        .frame(height: 75.0)
+//                }
                 Form {
                     Section(header: Text("Personal Data")) {
                         TextField("Name", text: self.$registerViewModel.name)
@@ -32,19 +42,23 @@ struct RegistrationView: View {
                         }
                     }
                 }
+                Spacer()
                 if self.registerViewModel.errorMessage != nil {
                     Text(self.registerViewModel.errorMessage!)
                         .foregroundColor(.red)
                         .font(.custom(Constants.regularFont, size: 14.0))
                 }
                 Spacer()
-                if self.registerViewModel.loading {
+                if self.$registerViewModel.loading.wrappedValue && !self.registerViewModel.registered {
                     ProgressView()
                 }
                 FormButton(title: "Register", action: {
-                    self.registerViewModel.register()
+                    if self.registerViewModel.validateRegistration() {
+                        self.registerViewModel.register()
+                    }
                 }, enabled: {
-                    self.registerViewModel.validateRegistration()
+                    true
+//                    self.registerViewModel.validateRegistration()
                 }).frame(height: 50.0)
                 .padding(.bottom, 32.0)
             }

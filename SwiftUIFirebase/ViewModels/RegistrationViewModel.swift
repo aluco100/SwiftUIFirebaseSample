@@ -21,7 +21,7 @@ class RegistrationViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var birthdate: Date = Date()
     @Published var password: String = ""
-    var loading: Bool = false
+    @Published var loading: Bool = false
     
     //MARK: - Init
     
@@ -34,6 +34,10 @@ class RegistrationViewModel: ObservableObject {
     //MARK: - Validate Registration
     
     public func validateRegistration() -> Bool {
+        self.registration?.name = name
+        self.registration?.email = email
+        self.registration?.birthdate = Timestamp(date: birthdate)
+        self.registration?.password = password
         if !(registration?.validate() ?? false) {
             self.errorMessage = registration?.errorMessages().first ?? ""
         }
@@ -44,14 +48,11 @@ class RegistrationViewModel: ObservableObject {
     
     public func register() {
         self.loading = true
-        self.registration?.name = name
-        self.registration?.email = email
-        self.registration?.birthdate = Timestamp(date: birthdate)
-        self.registration?.password = password
         guard registration != nil else { return }
         strategy.register(registration!) {
             self.loading = false
             self.registered = true
+            self.errorMessage = nil
         } _: { (error) in
             self.loading = false
             self.errorMessage = error.localizedDescription

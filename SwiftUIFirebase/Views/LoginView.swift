@@ -40,7 +40,7 @@ struct LoginView: View {
             HStack {
                 Spacer()
                 Button("Register", action: {
-                    self.presentRegister = true
+                    self.presentRegister.toggle()
                 })
                 .fullScreenCover(isPresented: self.$presentRegister, content: {
                     RegistrationView(withPassword: true)
