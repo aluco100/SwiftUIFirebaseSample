@@ -8,6 +8,9 @@ target 'SwiftUIFirebase' do
   # Pods for SwiftUIFirebase
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'FBSDKCoreKit/Swift'
+  pod 'FBSDKLoginKit/Swift'
+  pod 'FBSDKShareKit/Swift'
 
   target 'SwiftUIFirebaseTests' do
     inherit! :search_paths
