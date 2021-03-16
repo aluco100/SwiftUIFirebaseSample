@@ -15,6 +15,7 @@ struct LoginView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var presentRegister: Bool = false
+    @State private var registrationWithPassword: Bool = true
     
     init() {
         UITableView.appearance().backgroundColor = .clear
@@ -43,7 +44,7 @@ struct LoginView: View {
                     self.presentRegister.toggle()
                 })
                 .fullScreenCover(isPresented: self.$presentRegister, content: {
-                    RegistrationView(withPassword: true)
+                    RegistrationView(withPassword: self.registrationWithPassword)
                 })
                 .font(.custom(Constants.boldFont, size: 16.0))
             }.frame(height: 40.0)
@@ -75,7 +76,10 @@ struct LoginView: View {
         }
         .alert(isPresented: self.$loginViewModel.showingAlert, content: {
             Alert(title: Text(self.loginViewModel.alertTitle), message: Text(self.loginViewModel.alertMessage), dismissButton: Alert.Button.default(Text("OK"),action: {
+                //TODO: Screen de sesion
                 self.loading = false
+//                self.registrationWithPassword = false
+//                self.presentRegister = true
             }))
         })
     }
